@@ -7,6 +7,10 @@ EX_system_engineering/
 │   │   ├── 2018_atami.csv
 │   │   ├── 2021_atami.csv
 │   │   └── 2024_atami.csv
+│   ├── chukagai/
+│   │   ├── 2018_chukagai.csv
+│   │   ├── 2021_chukagai.csv
+│   │   └── 2024_chukagai.csv
 │   ├── enoshima/
 │   │   ├── 2018_enoshima.csv
 │   │   ├── 2021_enoshima.csv
@@ -19,6 +23,10 @@ EX_system_engineering/
 │   │   ├── 2018_kamakura.csv
 │   │   ├── 2021_kamakura.csv
 │   │   └── 2024_kamakura.csv
+│   ├── minatomirai/
+│   │   ├── 2018_minatomirai.csv
+│   │   ├── 2021_minatomirai.csv
+│   │   └── 2024_minatomirai.csv
 │   ├── miura/
 │   │   ├── 2018_miura.csv
 │   │   ├── 2021_miura.csv
@@ -34,7 +42,7 @@ EX_system_engineering/
 │   └── ...
 │
 ├── analysis_script.py     # 人流データ集計・可視化スクリプト
-├── analyze_trends.py      # output内の傾向分析スクリプト
+├── analyze_trends.py      # output内の傾向分析スクリプト（ランキング・人数も出力）
 ├── convert_to_utf8.py     # CSVの文字コード変換スクリプト
 └── README.md              # このファイル
 ```
@@ -43,5 +51,5 @@ EX_system_engineering/
 - region/配下のディレクトリ・ファイルは都市や年が増減しても自動対応できる設計です。
 - output/配下には自動生成された集計CSV・グラフ画像が格納されます。
 - analysis_script.py：region/配下のデータを集計・グラフ化
-- analyze_trends.py：output/配下の集計結果から傾向を抽出
+- analyze_trends.py：output/配下の集計結果から傾向・ランキングを抽出
 - convert_to_utf8.py：CSVの文字コード（Shift_JIS→UTF-8）変換
